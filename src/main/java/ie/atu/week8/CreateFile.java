@@ -10,8 +10,8 @@ public class CreateFile {
             System.out.println("My File is located at " + myFile.getAbsolutePath());
             String content = "Details to write";
             try{
-                FileWriter myWriter = new FileWriter(myFile);
-                myWriter.write("hello world 2");
+                FileWriter myWriter = new FileWriter(myFile, true);
+                myWriter.write("hi");
                 myWriter.close();
 
 
